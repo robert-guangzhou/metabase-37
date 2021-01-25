@@ -46,4 +46,5 @@ ADD . .
 
 # build the app
 RUN INTERACTIVE=false bin/build
-
+#ADD FONTCONFIG and ttf-dejavu  to support generate xlsx
+RUN apk --update add fontconfig ttf-dejavu
